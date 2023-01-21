@@ -34,3 +34,45 @@ public String pigLatin(String sWord)
       return sWord.substring(findFirstVowel(sWord)) + sWord.substring(0,findFirstVowel(sWord)) + "ay";
       }
 }
+
+/*class lowellhymnpig {
+  
+    public static String pigLatinHymn(String hymn)
+    {
+        String pig = "";
+        for (int i = 0; i < hymn.length(); i++) {
+            int j = i;
+            if (i >= hymn.length())
+                break;
+            while (i < hymn.length() && hymn.charAt(i) != ' ')
+                i++;
+            if (pig.isEmpty()) {
+                pig = pig.concat(
+                    hymn.substring(j + 1, i)
+                    + hymn.charAt(j) + "ay");
+            }
+            else {
+                pig = pig.concat(
+                    " " + hymn.substring(j + 1, i)
+                    + hymn.charAt(j) + "ay");
+            }
+        }
+        return pig;
+    }
+  
+    public static void main(String[] args)
+    {
+      String line1 = "With heads bared we stand,";
+      String line2 = "In tribute to thee,";
+      String line3 = "Our Alma-Mater Lowell,";
+      String line4 = "All true to thee we'll be.";
+      String line5 = "Unfurled red and white,";
+      String line6 = "None shall thee decry";
+      String line7 = "Thy name we love,";
+      String line8 = "Oh Lowell High,";
+      String line9 = "Oh Lowell High.";
+      
+      hymn = line1;
+        System.out.println(pigLatinHymn(hymn));
+    }
+}*/
